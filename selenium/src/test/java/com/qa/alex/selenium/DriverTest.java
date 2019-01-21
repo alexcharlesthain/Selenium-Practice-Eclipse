@@ -94,8 +94,7 @@ public class DriverTest {
 	  @Test
 	  public void testShoppingSiteTestCase() throws Exception {
 		driver.get("http://automationpractice.com/index.php");
-		
-		driver.findElement(By.id("")).click();
+
 		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Summer Dresses'])[1]/following::a[1]")).click();
 		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='$30.51'])[2]/following::span[2]")).click();
 		driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='$28.98'])[6]/following::span[1]")).click();
